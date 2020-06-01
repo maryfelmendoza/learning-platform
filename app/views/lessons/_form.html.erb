@@ -1,0 +1,14 @@
+<h3>Create a new lesson</h3>
+<%= form_for [ @course, @lesson ] do |f| %>
+  <p>
+    <%= f.label :lesson_title, "Lesson Title" %><br/>
+    <%= f.text_field :lesson_title %>
+  </p>
+  <p>
+    <%= f.label :body, "Lesson" %><br/>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>

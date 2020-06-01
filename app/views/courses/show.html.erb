@@ -1,0 +1,8 @@
+<h1><%= @course.title %></h1>
+<p><%= @course.description %></p>
+<h3>Lessons</h3>
+<%= render partial: 'courses/lesson', collection: @course.lessons %>
+<%= render partial: 'lessons/form' %>
+<%= link_to "<< Back to Courses List", courses_path %>
+<%= link_to "delete", course_path(@course), method: :delete, data: {confirm: "Really delete the course?"} %>
+<%= link_to "edit", edit_course_path(@course) %>
