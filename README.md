@@ -11,7 +11,7 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Languages: Ruby
+- Languages: HTML, CSS, Ruby, JavaScript
 - Tecnologies: RoR
 
 ## Live Demo
